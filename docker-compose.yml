@@ -1,0 +1,9 @@
+#adapted from example in docker documentation
+version: '3'
+
+services:
+  python-demo:
+    build: .
+    volumes:
+       - .:/code
+    command: python test.py
